@@ -1,0 +1,410 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Desarrollo Web Profesional |JAD Desarrollo</title>
+    <meta name="description" content="Desarrollo de sitios web a medida, responsive y optimizados para SEO. Creamos tu presencia online profesional.">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+     <!-- Navbar -->
+     <nav class="creative-navbar" aria-label="Navegación principal">
+        <div class="navbar-background">
+            <div class="navbar-particles" id="navbar-particles"></div>
+        </div>
+        
+        <div class="container navbar-container">
+            <div class="navbar-logo">
+                <div class="logo-orb">
+                    <span>JAD</span>
+                    <div class="orb-rings">
+                        <div class="ring ring1"></div>
+                        <div class="ring ring2"></div>
+                    </div>
+                </div>
+                <a href="#" class="logo-text">Desarrollo<span>Web</span></a>
+            </div>
+            
+            <div class="navbar-links" id="navbarLinks">
+                <a href="index.html" class="nav-link">Inicio</a>
+                
+                <div class="nav-dropdown">
+                    <button class="dropdown-btn" aria-expanded="false" aria-controls="services-dropdown">
+                        Servicios <i class="fas fa-chevron-down"></i>
+                    </button>
+                    <div class="dropdown-content" id="services-dropdown">
+                        <a href="section.html" class="dropdown-link">
+                            <i class="fas fa-paint-brush" aria-hidden="true"></i>
+                            <div>
+                                <h4>Diseño UI/UX</h4>
+                                <p>Interfaces intuitivas y hermosas</p>
+                            </div>
+                        </a>
+                        <a href="section.html" class="dropdown-link">
+                            <i class="fas fa-code" aria-hidden="true"></i>
+                            <div>
+                                <h4>Desarrollo Web</h4>
+                                <p>Sitios modernos y rápidos</p>
+                            </div>
+                        </a>
+                        <a href="section.html" class="dropdown-link">
+                            <i class="fas fa-chart-line" aria-hidden="true"></i>
+                            <div>
+                                <h4>Marketing Digital</h4>
+                                <p>Estrategias que generan resultados</p>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                
+                <a href="index.html" class="nav-link"></a>
+                <a href="index.html" class="nav-link">Nosotros</a>
+                <a href="index.html" class="nav-link">Contacto</a>
+            </div>
+            
+            <div class="navbar-actions">
+                <button class="nav-toggle" id="navToggle" aria-expanded="false" aria-controls="navbarLinks" aria-label="Menú">
+                    <span class="toggle-line"></span>
+                    <span class="toggle-line"></span>
+                    <span class="toggle-line"></span>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section para Desarrollo Web -->
+    <section class="service-hero" id="desarrollo-web">
+        <div class="service-hero-background"></div>
+        <div class="particles" id="service-particles"></div>
+        
+        <div class="container">
+            <div class="service-hero-content">
+                <h1>Desarrollo <span>Web</span> Profesional</h1>
+                <p class="hero-subtitle">Sitios web rápidos, responsive y optimizados para convertir visitantes en clientes</p>
+                <a href="#contacto" class="btn btn-primary">Solicitar Presupuesto</a>
+            </div>
+        </div>
+    </section>
+
+   <!-- Sección Detalles del Servicio - Versión Profesional -->
+<section class="service-details">
+    <div class="container">
+        <!-- Tarjetas de características con efecto hover avanzado -->
+        <div class="service-features">
+            <div class="feature-card">
+                <div class="feature-card-inner">
+                    <div class="feature-icon">
+                        <div class="icon-wrapper">
+                            <i class="fas fa-mobile-alt"></i>
+                        </div>
+                        <div class="icon-bg"></div>
+                    </div>
+                    <h3>Diseño Responsive</h3>
+                    <p>Sitios que se adaptan perfectamente a todos los dispositivos: móviles, tablets y desktop.</p>
+                    <div class="feature-hover-content">
+                        <ul>
+                            <li>Mobile-first approach</li>
+                            <li>Pruebas en múltiples dispositivos</li>
+                            <li>Fluid grids y media queries</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="feature-card">
+                <div class="feature-card-inner">
+                    <div class="feature-icon">
+                        <div class="icon-wrapper">
+                            <i class="fas fa-tachometer-alt"></i>
+                        </div>
+                        <div class="icon-bg"></div>
+                    </div>
+                    <h3>Máxima Velocidad</h3>
+                    <p>Optimización de rendimiento para reducir tiempos de carga y mejorar la experiencia de usuario.</p>
+                    <div class="feature-hover-content">
+                        <ul>
+                            <li>Carga bajo 2 segundos</li>
+                            <li>Optimización de imágenes</li>
+                            <li>Lazy loading</li>
+                            <li>Caching avanzado</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="feature-card">
+                <div class="feature-card-inner">
+                    <div class="feature-icon">
+                        <div class="icon-wrapper">
+                            <i class="fas fa-search"></i>
+                        </div>
+                        <div class="icon-bg"></div>
+                    </div>
+                    <h3>SEO Integrado</h3>
+                    <p>Desarrollo con mejores prácticas de SEO para mejorar tu posicionamiento en buscadores.</p>
+                    <div class="feature-hover-content">
+                        <ul>
+                            <li>Estructura semántica</li>
+                            <li>Meta tags optimizados</li>
+                            <li>URLs amigables</li>
+                            <li>Schema markup</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Descripción del servicio con animación -->
+        <div class="service-description">
+            <div class="description-content">
+                <h2 class="section-title">Desarrollo Web <span>a Medida</span></h2>
+                <div class="title-decoration"></div>
+                <p class="lead-text">En CreativoDesign creamos sitios web que no solo son visualmente atractivos, sino que también están diseñados para <strong>generar resultados</strong>. Nuestro enfoque combina diseño intuitivo, tecnología moderna y estrategias de marketing digital para ofrecer una solución completa.</p>
+                
+                <div class="highlight-box">
+                    <p>Transformamos tu visión en una plataforma digital que comunica efectivamente tu marca y convierte visitantes en clientes.</p>
+                </div>
+                
+                <div class="service-process">
+                    <h3 class="process-title">Nuestro <span>Proceso</span></h3>
+                    <div class="process-steps">
+                        <div class="process-step">
+                            <div class="step-number">1</div>
+                            <div class="step-content">
+                                <h4>Consultoría Inicial</h4>
+                                <p>Analizamos tus necesidades, objetivos y audiencia para crear una estrategia digital efectiva.</p>
+                            </div>
+                        </div>
+                        <div class="process-step">
+                            <div class="step-number">2</div>
+                            <div class="step-content">
+                                <h4>Diseño UX/UI</h4>
+                                <p>Creamos prototipos interactivos centrados en la experiencia del usuario.</p>
+                            </div>
+                        </div>
+                        <div class="process-step">
+                            <div class="step-number">3</div>
+                            <div class="step-content">
+                                <h4>Desarrollo</h4>
+                                <p>Implementación con tecnologías modernas y arquitectura escalable.</p>
+                            </div>
+                        </div>
+                        <div class="process-step">
+                            <div class="step-number">4</div>
+                            <div class="step-content">
+                                <h4>Pruebas</h4>
+                                <p>Aseguramos calidad con testing en múltiples dispositivos y navegadores.</p>
+                            </div>
+                        </div>
+                        <div class="process-step">
+                            <div class="step-number">5</div>
+                            <div class="step-content">
+                                <h4>Lanzamiento</h4>
+                                <p>Implementación profesional con seguimiento post-lanzamiento.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+    <!-- Sección Tecnologías -->
+    <section class="tech-section">
+        <div class="container">
+            <h2 class="section-title">Tecnologías que <span>Utilizamos</span></h2>
+            <p class="section-subtitle">Usamos las mejores herramientas para garantizar resultados de calidad</p>
+            
+            <div class="tech-grid">
+                <div class="tech-item">
+                    <img src="asset/html.png" alt="HTML5" loading="lazy">
+                    <span>HTML5</span>
+                </div>
+                <div class="tech-item">
+                    <img src="asset/css.png" alt="CSS3" loading="lazy">
+                    <span>CSS3</span>
+                </div>
+                <div class="tech-item">
+                    <img src="asset/js.png" alt="JavaScript" loading="lazy">
+                    <span>JavaScript</span>
+                </div>
+                <div class="tech-item">
+                    <img src="asset/react.png" alt="React" loading="lazy">
+                    <span>React</span>
+                </div>
+                <div class="tech-item">
+                    <img src="asset/github.png" alt="Github" loading="lazy">
+                    <span>Github</span>
+                </div>
+                <div class="tech-item">
+                    <img src="asset/node.png" alt="Node.js" loading="lazy">
+                    <span>Node.js</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    
+
+    <!-- Sección Contacto -->
+    <section id="contacto" class="contact-section">
+        <div class="contact-background">
+            <div class="particles" id="contact-particles"></div>
+           
+        </div>
+        
+        <div class="container">
+            <h2 class="section-title">Contáct<span>anos</span></h2>
+            <p class="section-subtitle">Estamos listos para convertir tu idea en realidad</p>
+            
+            <div class="contact-content">
+                <div class="contact-info">
+                    <div class="info-item">
+                        <i class="fas fa-map-marker-alt" aria-hidden="true"></i>
+                        <div>
+                            <h4>Ubicación</h4>
+                            <p>Mar del Plata, Buenos Aires</p>
+                        </div>
+                    </div>
+                    <div class="info-item">
+                        <i class="fas fa-phone-alt" aria-hidden="true"></i>
+                        <div>
+                            <h4>Teléfono</h4>
+                            <p>+54 9298 4287176</p>
+                        </div>
+                    </div>
+                    <div class="info-item">
+                        <i class="fas fa-envelope" aria-hidden="true"></i>
+                        <div>
+                            <h4>Email</h4>
+                            <p>Jaddesarrollosweb@gmail.com</p>
+                        </div>
+                    </div>
+                    <div class="info-item">
+                        <i class="fas fa-clock" aria-hidden="true"></i>
+                        <div>
+                            <h4>Horarios</h4>
+                            <p>Lun-Sab: 9am - 7pm</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <form class="contact-form" id="contactForm">
+                    <div class="form-group">
+                        <label for="name" class="sr-only">Nombre</label>
+                        <input type="text" id="name" placeholder="Nombre" required>
+                        <span class="error-message" id="name-error"></span>
+                    </div>
+                    <div class="form-group">
+                        <label for="email" class="sr-only">Email</label>
+                        <input type="email" id="email" placeholder="Email" required>
+                        <span class="error-message" id="email-error"></span>
+                    </div>
+                    <div class="form-group">
+                        <label for="phone" class="sr-only">Teléfono</label>
+                        <input type="tel" id="phone" placeholder="Teléfono">
+                        <span class="error-message" id="phone-error"></span>
+                    </div>
+                    <div class="form-group">
+                        <label for="service" class="sr-only">Servicio de interés</label>
+                        <select id="service" required>
+                            <option value="" disabled selected>Servicio de interés</option>
+                            <option value="Diseño UI/UX">Diseño UI/UX</option>
+                            <option value="Desarrollo Web">Desarrollo Web</option>
+                            <option value="Marketing Digital">Marketing Digital</option>
+                            <option value="Otro">Otro</option>
+                        </select>
+                        <span class="error-message" id="service-error"></span>
+                    </div>
+                    <div class="form-group">
+                        <label for="message" class="sr-only">Tu mensaje</label>
+                        <textarea id="message" placeholder="Tu mensaje" rows="5" required></textarea>
+                        <span class="error-message" id="message-error"></span>
+                    </div>
+                    <button type="submit" class="btn btn-primary" id="submitBtn">Enviar Mensaje</button>
+                    <div class="form-success" id="formSuccess" style="display: none;">
+                        ¡Gracias por tu mensaje! Nos pondremos en contacto contigo pronto.
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+
+<!-- Footer -->
+<footer class="creative-footer">
+    <div class="footer-background">
+        <div class="particles" id="footer-particles"></div>
+        <div class="wave-wrapper">
+            <div class="wave wave1"></div>
+            <div class="wave wave2"></div>
+            <div class="wave wave3"></div>
+        </div>
+    </div>
+    
+    <div class="container">
+        <div class="footer-content">
+            <div class="footer-logo">
+                <div class="logo-circle">
+                    <span class="logo-initial">JAD</span>
+                    <div class="logo-orbits">
+                        <div class="orbit orbit1"></div>
+                        <div class="orbit orbit2"></div>
+                        <div class="orbit orbit3"></div>
+                    </div>
+                </div>
+                <h2>Desarrollo<span>web</span></h2>
+                <p>Transformando ideas en experiencias digitales memorables.</p>
+            </div>
+            
+            <div class="footer-sections">
+                <div class="footer-section">
+                    <h3>Enlaces Rápidos</h3>
+                    <ul>
+                        <li><a href="#inicio" class="hover-link">Inicio</a></li>
+                        <li><a href="#servicios" class="hover-link">Servicios</a></li>
+                        <li><a href="#portafolio" class="hover-link">Portafolio</a></li>
+                        <li><a href="#nosotros" class="hover-link">Nosotros</a></li>
+                        <li><a href="#contacto" class="hover-link">Contacto</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h3>Servicios</h3>
+                    <ul>
+                        <li><a href="section.html" class="hover-link">Diseño UI/UX</a></li>
+                        <li><a href="section.html" class="hover-link">Desarrollo Web</a></li>
+                        <li><a href="section.html" class="hover-link">Marketing Digital</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h3>Contacto</h3>
+                    <ul>
+                        <li><i class="fas fa-map-marker-alt" aria-hidden="true"></i>Mar del Plata, Buenos Aires</li>
+                        <li><i class="fas fa-phone" aria-hidden="true"></i> +54 9 298 4287176</li>
+                        <li><i class="fas fa-envelope" aria-hidden="true"></i> Jaddesarrollosweb@gmail.com</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        
+        <div class="footer-bottom">
+            <div class="footer-copyright">
+                &copy; 2025 JAD desarrollo web.
+            </div>
+        </div>
+    </div>
+    
+    <div class="back-to-top" id="backToTop" aria-label="Volver arriba">
+        <i class="fas fa-arrow-up"></i>
+    </div>
+</footer>
+
+    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>

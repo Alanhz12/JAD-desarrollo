@@ -1,0 +1,483 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JAD Desarrollo - Marketing Digital Profesional</title>
+    <meta name="description" content="Estrategias de marketing digital que generan resultados reales. SEO, publicidad digital, redes sociales y más.">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="favicon.png">
+    
+    <!-- Fuentes -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
+    
+    <!-- CSS -->
+    <link rel="stylesheet" href="styles.css">
+    
+    <!-- Preload -->
+    <link rel="preload" href="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js" as="script">
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="creative-navbar" aria-label="Navegación principal">
+        <div class="navbar-background">
+            <div class="navbar-particles" id="navbar-particles"></div>
+        </div>
+        
+        <div class="container navbar-container">
+            <div class="navbar-logo">
+                <div class="logo-orb">
+                    <span>JAD</span>
+                    <div class="orb-rings">
+                        <div class="ring ring1"></div>
+                        <div class="ring ring2"></div>
+                    </div>
+                </div>
+                <a href="index.html" class="logo-text">Marketing<span>Digital</span></a>
+            </div>
+            
+            <div class="navbar-links" id="navbarLinks">
+                <a href="index.html" class="nav-link">Inicio</a>
+                
+                <div class="nav-dropdown">
+                    <button class="dropdown-btn" aria-expanded="false" aria-controls="services-dropdown">
+                        Servicios <i class="fas fa-chevron-down"></i>
+                    </button>
+                    <div class="dropdown-content" id="services-dropdown">
+                        <a href="desarrollo-web.html" class="dropdown-link">
+                            <i class="fas fa-code" aria-hidden="true"></i>
+                            <div>
+                                <h4>Desarrollo Web</h4>
+                                <p>Sitios modernos y rápidos</p>
+                            </div>
+                        </a>
+                        <a href="marketing-digital.html" class="dropdown-link">
+                            <i class="fas fa-bullseye" aria-hidden="true"></i>
+                            <div>
+                                <h4>Marketing Digital</h4>
+                                <p>Estrategias que generan resultados</p>
+                            </div>
+                        </a>
+                        <a href="index.html" class="dropdown-link">
+                            <i class="fas fa-paint-brush" aria-hidden="true"></i>
+                            <div>
+                                <h4>Diseño UI/UX</h4>
+                                <p>Interfaces intuitivas y hermosas</p>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                
+                <a href="#estrategias" class="nav-link">Estrategias</a>
+                <a href="#resultados" class="nav-link">Resultados</a>
+                <a href="#contacto" class="nav-link">Contacto</a>
+            </div>
+            
+            <div class="navbar-actions">
+                <button class="nav-toggle" id="navToggle" aria-expanded="false" aria-controls="navbarLinks" aria-label="Menú">
+                    <span class="toggle-line"></span>
+                    <span class="toggle-line"></span>
+                    <span class="toggle-line"></span>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="marketing-hero">
+        <div class="marketing-hero-background"></div>
+        <div class="particles" id="marketing-particles"></div>
+        
+        <div class="container">
+            <div class="marketing-hero-content">
+                <h1>Marketing Digital <span>Que Genera Resultados</span></h1>
+                <p class="hero-subtitle">Estrategias comprobadas para aumentar tu presencia online, generar leads y aumentar ventas</p>
+                <div class="hero-buttons">
+                    <a href="#servicios" class="btn btn-primary">Nuestros Servicios</a>
+                    <a href="#contacto" class="btn btn-secondary">Consulta Gratis</a>
+                </div>
+            </div>
+        </div>
+        
+        <div class="hero-scroll">
+            <a href="#servicios" aria-label="Desplazarse hacia abajo"><i class="fas fa-chevron-down"></i></a>
+        </div>
+    </section>
+
+    <!-- Sección Logos Clientes -->
+    <section class="client-logos">
+        <div class="container">
+            <p class="section-subtitle">Confían en nosotros</p>
+            <div class="logos-grid">
+                <img src="assets/logo-cliente1.png" alt="Logo cliente 1" loading="lazy">
+                <img src="assets/logo-cliente2.png" alt="Logo cliente 2" loading="lazy">
+                <img src="assets/logo-cliente3.png" alt="Logo cliente 3" loading="lazy">
+                <img src="assets/logo-cliente4.png" alt="Logo cliente 4" loading="lazy">
+                <img src="assets/logo-cliente5.png" alt="Logo cliente 5" loading="lazy">
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección Servicios -->
+    <section id="servicios" class="marketing-services">
+        <div class="container">
+            <h2 class="section-title">Nuestros <span>Servicios</span></h2>
+            <p class="section-subtitle">Soluciones integrales para cada etapa de tu funnel de marketing</p>
+            
+            <div class="services-tabs">
+                <div class="tab-buttons">
+                    <button class="tab-btn active" data-tab="seo">SEO</button>
+                    <button class="tab-btn" data-tab="ads">Publicidad Digital</button>
+                    <button class="tab-btn" data-tab="social">Redes Sociales</button>
+                    <button class="tab-btn" data-tab="content">Contenido</button>
+                </div>
+                
+                <div class="tab-content active" id="seo">
+                    <div class="tab-content-inner">
+                        <div class="tab-text">
+                            <h3>Posicionamiento SEO</h3>
+                            <p>Llevamos tu sitio web a los primeros lugares de Google con estrategias orgánicas sostenibles.</p>
+                            <ul class="feature-list">
+                                <li><i class="fas fa-check-circle"></i> Investigación de palabras clave</li>
+                                <li><i class="fas fa-check-circle"></i> Optimización técnica</li>
+                                <li><i class="fas fa-check-circle"></i> Estrategia de contenidos</li>
+                                <li><i class="fas fa-check-circle"></i> Link building de calidad</li>
+                                <li><i class="fas fa-check-circle"></i> Reportes mensuales</li>
+                            </ul>
+                            <a href="#contacto" class="btn btn-primary">Saber más</a>
+                        </div>
+                        <div class="tab-image">
+                            <img src="assets/seo-illustration.jpg" alt="Servicios SEO" loading="lazy">
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="tab-content" id="ads">
+                    <div class="tab-content-inner">
+                        <div class="tab-text">
+                            <h3>Publicidad Digital</h3>
+                            <p>Campañas pagas que generan resultados inmediatos con el máximo retorno de inversión.</p>
+                            <ul class="feature-list">
+                                <li><i class="fas fa-check-circle"></i> Google Ads</li>
+                                <li><i class="fas fa-check-circle"></i> Meta Ads (Facebook/Instagram)</li>
+                                <li><i class="fas fa-check-circle"></i> LinkedIn Ads</li>
+                                <li><i class="fas fa-check-circle"></i> Remarketing</li>
+                                <li><i class="fas fa-check-circle"></i> Optimización continua</li>
+                            </ul>
+                            <a href="#contacto" class="btn btn-primary">Saber más</a>
+                        </div>
+                        <div class="tab-image">
+                            <img src="assets/ads-illustration.jpg" alt="Publicidad Digital" loading="lazy">
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="tab-content" id="social">
+                    <div class="tab-content-inner">
+                        <div class="tab-text">
+                            <h3>Redes Sociales</h3>
+                            <p>Gestión profesional que aumenta tu engagement y construye comunidad.</p>
+                            <ul class="feature-list">
+                                <li><i class="fas fa-check-circle"></i> Estrategia de contenidos</li>
+                                <li><i class="fas fa-check-circle"></i> Community management</li>
+                                <li><i class="fas fa-check-circle"></i> Creación de contenido</li>
+                                <li><i class="fas fa-check-circle"></i> Análisis de competencia</li>
+                                <li><i class="fas fa-check-circle"></i> Reportes de desempeño</li>
+                            </ul>
+                            <a href="#contacto" class="btn btn-primary">Saber más</a>
+                        </div>
+                        <div class="tab-image">
+                            <img src="assets/social-illustration.jpg" alt="Redes Sociales" loading="lazy">
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="tab-content" id="content">
+                    <div class="tab-content-inner">
+                        <div class="tab-text">
+                            <h3>Marketing de Contenidos</h3>
+                            <p>Contenido valioso que atrae, educa y convierte a tu audiencia.</p>
+                            <ul class="feature-list">
+                                <li><i class="fas fa-check-circle"></i> Blog estratégico</li>
+                                <li><i class="fas fa-check-circle"></i> Infografías</li>
+                                <li><i class="fas fa-check-circle"></i> Videos explicativos</li>
+                                <li><i class="fas fa-check-circle"></i> Ebooks y guías</li>
+                                <li><i class="fas fa-check-circle"></i> Newsletters</li>
+                            </ul>
+                            <a href="#contacto" class="btn btn-primary">Saber más</a>
+                        </div>
+                        <div class="tab-image">
+                            <img src="assets/content-illustration.jpg" alt="Marketing de Contenidos" loading="lazy">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección Estrategias -->
+    <section id="estrategias" class="strategy-section">
+        <div class="strategy-background">
+            <div class="particles" id="strategy-particles"></div>
+        </div>
+        
+        <div class="container">
+            <h2 class="section-title">Nuestra <span>Metodología</span></h2>
+            <p class="section-subtitle">Un proceso claro y transparente para garantizar resultados</p>
+            
+            <div class="strategy-steps">
+                <div class="strategy-step">
+                    <div class="step-number">1</div>
+                    <div class="step-content">
+                        <h3>Análisis Inicial</h3>
+                        <p>Evaluamos tu negocio, competencia y audiencia para identificar oportunidades.</p>
+                    </div>
+                </div>
+                
+                <div class="strategy-step">
+                    <div class="step-number">2</div>
+                    <div class="step-content">
+                        <h3>Plan Estratégico</h3>
+                        <p>Creamos una estrategia personalizada con objetivos y KPIs claros.</p>
+                    </div>
+                </div>
+                
+                <div class="strategy-step">
+                    <div class="step-number">3</div>
+                    <div class="step-content">
+                        <h3>Implementación</h3>
+                        <p>Ejecutamos las tácticas con el mejor uso de recursos y presupuesto.</p>
+                    </div>
+                </div>
+                
+                <div class="strategy-step">
+                    <div class="step-number">4</div>
+                    <div class="step-content">
+                        <h3>Optimización</h3>
+                        <p>Ajustamos continuamente basados en datos para mejorar resultados.</p>
+                    </div>
+                </div>
+                
+                <div class="strategy-step">
+                    <div class="step-number">5</div>
+                    <div class="step-content">
+                        <h3>Reportes</h3>
+                        <p>Informes detallados que muestran el ROI de cada acción.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección Resultados -->
+    <section id="resultados" class="results-section">
+        <div class="container">
+            <h2 class="section-title">Resultados <span>Tangibles</span></h2>
+            <p class="section-subtitle">Métricas que importan para tu negocio</p>
+            
+            <div class="results-grid">
+                <div class="result-card">
+                    <div class="result-icon">
+                        <i class="fas fa-chart-line"></i>
+                    </div>
+                    <div class="result-number" data-count="150">0</div>
+                    <div class="result-label">% Crecimiento Tráfico</div>
+                </div>
+                
+                <div class="result-card">
+                    <div class="result-icon">
+                        <i class="fas fa-search-dollar"></i>
+                    </div>
+                    <div class="result-number" data-count="300">0</div>
+                    <div class="result-label">% ROI Campañas</div>
+                </div>
+                
+                <div class="result-card">
+                    <div class="result-icon">
+                        <i class="fas fa-users"></i>
+                    </div>
+                    <div class="result-number" data-count="5000">0</div>
+                    <div class="result-label">Leads Generados</div>
+                </div>
+                
+                <div class="result-card">
+                    <div class="result-icon">
+                        <i class="fas fa-dollar-sign"></i>
+                    </div>
+                    <div class="result-number" data-count="1.5">0</div>
+                    <div class="result-label">Millones en Ventas</div>
+                </div>
+            </div>
+            
+          
+        </div>
+    </section>
+
+    <!-- Sección Contacto -->
+    <section id="contacto" class="contact-section">
+        <div class="contact-background">
+            <div class="particles" id="contact-particles"></div>
+        </div>
+        
+        <div class="container">
+            <h2 class="section-title">Hablemos de tu <span>Proyecto</span></h2>
+            <p class="section-subtitle">Completa el formulario y nos pondremos en contacto contigo en menos de 24 horas</p>
+            
+            <div class="contact-content">
+                <div class="contact-info">
+                    <div class="info-item">
+                        <i class="fas fa-map-marker-alt" aria-hidden="true"></i>
+                        <div>
+                            <h4>Ubicación</h4>
+                            <p>Mar del Plata, Buenos Aires</p>
+                        </div>
+                    </div>
+                    <div class="info-item">
+                        <i class="fas fa-phone-alt" aria-hidden="true"></i>
+                        <div>
+                            <h4>Teléfono</h4>
+                            <p>+54 9298 4287176</p>
+                        </div>
+                    </div>
+                    <div class="info-item">
+                        <i class="fas fa-envelope" aria-hidden="true"></i>
+                        <div>
+                            <h4>Email</h4>
+                            <p>Jaddesarrollosweb@gmail.com</p>
+                        </div>
+                    </div>
+                    <div class="info-item">
+                        <i class="fas fa-clock" aria-hidden="true"></i>
+                        <div>
+                            <h4>Horarios</h4>
+                            <p>Lun-Sab: 9am - 7pm</p>
+                        </div>
+                    </div>
+                    
+                    <div class="social-links">
+                        <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                        <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="#" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+                    </div>
+                </div>
+                
+                <form class="contact-form" id="marketingForm">
+                    <div class="form-group">
+                        <label for="name" class="sr-only">Nombre</label>
+                        <input type="text" id="name" placeholder="Nombre" required>
+                        <span class="error-message" id="name-error"></span>
+                    </div>
+                    <div class="form-group">
+                        <label for="email" class="sr-only">Email</label>
+                        <input type="email" id="email" placeholder="Email" required>
+                        <span class="error-message" id="email-error"></span>
+                    </div>
+                    <div class="form-group">
+                        <label for="phone" class="sr-only">Teléfono</label>
+                        <input type="tel" id="phone" placeholder="Teléfono">
+                        <span class="error-message" id="phone-error"></span>
+                    </div>
+                    <div class="form-group">
+                        <label for="service" class="sr-only">Servicio de interés</label>
+                        <select id="service" required>
+                            <option value="" disabled selected>Servicio de interés</option>
+                            <option value="SEO">SEO y Posicionamiento</option>
+                            <option value="Ads">Publicidad Digital</option>
+                            <option value="Social">Redes Sociales</option>
+                            <option value="Content">Marketing de Contenidos</option>
+                            <option value="Full">Marketing Integral</option>
+                        </select>
+                        <span class="error-message" id="service-error"></span>
+                    </div>
+                    <div class="form-group">
+                        <label for="message" class="sr-only">Tu mensaje</label>
+                        <textarea id="message" placeholder="Cuéntanos sobre tu proyecto" rows="5" required></textarea>
+                        <span class="error-message" id="message-error"></span>
+                    </div>
+                    <button type="submit" class="btn btn-primary" id="submitBtn">Enviar Mensaje</button>
+                    <div class="form-success" id="formSuccess" style="display: none;">
+                        ¡Gracias por tu mensaje! Nos pondremos en contacto contigo pronto.
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="creative-footer">
+        <div class="footer-background">
+            <div class="particles" id="footer-particles"></div>
+            <div class="wave-wrapper">
+                <div class="wave wave1"></div>
+                <div class="wave wave2"></div>
+                <div class="wave wave3"></div>
+            </div>
+        </div>
+        
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <div class="logo-circle">
+                        <span class="logo-initial">JAD</span>
+                        <div class="logo-orbits">
+                            <div class="orbit orbit1"></div>
+                            <div class="orbit orbit2"></div>
+                            <div class="orbit orbit3"></div>
+                        </div>
+                    </div>
+                    <h2>Marketing<span>Digital</span></h2>
+                    <p>Estrategias digitales que generan crecimiento real.</p>
+                </div>
+                
+                <div class="footer-sections">
+                    <div class="footer-section">
+                        <h3>Enlaces Rápidos</h3>
+                        <ul>
+                            <li><a href="index.html" class="hover-link">Inicio</a></li>
+                            <li><a href="#servicios" class="hover-link">Servicios</a></li>
+                            <li><a href="#estrategias" class="hover-link">Estrategias</a></li>
+                            <li><a href="#resultados" class="hover-link">Resultados</a></li>
+                            <li><a href="#contacto" class="hover-link">Contacto</a></li>
+                        </ul>
+                    </div>
+                    
+                    <div class="footer-section">
+                        <h3>Servicios</h3>
+                        <ul>
+                            <li><a href="#seo" class="hover-link">SEO</a></li>
+                            <li><a href="#ads" class="hover-link">Publicidad Digital</a></li>
+                            <li><a href="#social" class="hover-link">Redes Sociales</a></li>
+                            <li><a href="#content" class="hover-link">Marketing de Contenidos</a></li>
+                        </ul>
+                    </div>
+                    
+                    <div class="footer-section">
+                        <h3>Contacto</h3>
+                        <ul>
+                            <li><i class="fas fa-map-marker-alt" aria-hidden="true"></i> Mar del Plata, Buenos Aires</li>
+                            <li><i class="fas fa-phone" aria-hidden="true"></i> +54 9 298 4287176</li>
+                            <li><i class="fas fa-envelope" aria-hidden="true"></i> Jaddesarrollosweb@gmail.com</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <div class="footer-copyright">
+                    &copy; 2025 JAD Marketing Digital. Todos los derechos reservados.
+                </div>
+            </div>
+        </div>
+        
+        <div class="back-to-top" id="backToTop" aria-label="Volver arriba">
+            <i class="fas fa-arrow-up"></i>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
